@@ -1,0 +1,3 @@
+require directors_database.rb
+a = pretty_print_nds
+print a
