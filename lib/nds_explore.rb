@@ -11,14 +11,10 @@ pretty_print_nds(directors_database)
 
 def print_first_directors_movie_titles
   # AoHoAoH
-  # Outer array - First director is in 0 position
-  # Hash of outer array - key is :movies
-  # Loop through all inner array positions
-  # Hash of inner array - key is :title 
-  dir0_movies = directors_database[0][:movies]
+  dir0_movies = directors_database[0][:movies] # Outer array - First director is in 0 position, hash of outer array - key is :movies
   inner_index = 0
-  while inner_index < dir0_movies.length do
-    puts "#{dir0_movies[inner_index][:title]}"
+  while inner_index < dir0_movies.length do # Loop through all inner array positions
+    puts "#{dir0_movies[inner_index][:title]}"  # Hash of inner array - key is :title 
     inner_index += 1
   end
 end
