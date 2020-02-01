@@ -17,7 +17,7 @@ def print_first_directors_movie_titles
   # Hash of inner array - key is :title 
   inner_index = 0
   while inner_index < directors_database[0][:movies].length do
-    puts "#{directors_database[0][:movies][inner_index][:title]}\n"
+    puts "#{directors_database[0][:movies][inner_index][:title]}"
     inner_index += 1
   end
 end
